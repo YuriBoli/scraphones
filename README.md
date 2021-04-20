@@ -1,6 +1,5 @@
 # scraphones
-A command-line application that find and extracts the websites’ logo image URLs and all phone numbers present on the websites.
-Aplicação de linha de comando que encontra e extrai o logo, todos os números de telefones dentro dos sites dados
+Aplicação de linha de comando que encontra e extrai o logo, todos os números de telefones nos sites inputados
 
 ## indice
 1. [Requisitos](#Requisitos)
