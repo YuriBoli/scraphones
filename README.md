@@ -17,13 +17,14 @@ Aplicação de linha de comando que encontra e extrai o logo, todos os números 
 
 ### Pastas
 A pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot) contem o projeto scrapy .
-* ##### [Spiders](https://github.com/YuriBoli/scraphones/tree/main/phonebot/spiders)
-[utils](https://github.com/YuriBoli/scraphones/tree/main/phonebot/spiders/utils) contém os módulos [logo_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/logo_filter.py), [phone_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_filter.py) e [phone_validator.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_validator.py) que são utilizados no para encontrar logo, telefone e verificar os telefones válidos.
-[phonenumber.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/phonenumber.py) contém o spider que raspa os sites em busca do logo e telefone.
-* [items.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/items.py) contém o item modelo de saída.
-* [middlewares.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/middlewares.py) arquivo gerado automaticamente pelo scrapy.
-* [pipelines.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/pipelines.py) arquivo gerado automaticamente pelo scrapy.
-* [settings.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/settings.py) contém as configurações customizadas do projeto.
+##### *[Spiders](https://github.com/YuriBoli/scraphones/tree/main/phonebot/spiders)*
+* [utils](https://github.com/YuriBoli/scraphones/tree/main/phonebot/spiders/utils) contém os módulos [logo_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/logo_filter.py), [phone_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_filter.py) e [phone_validator.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_validator.py) que são utilizados no para encontrar logo, telefone e verificar os telefones válidos.
+* [phonenumber.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/phonenumber.py) contém o spider que raspa os sites em busca do logo e telefone.
+
+[items.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/items.py) contém o item modelo de saída.<br />
+[middlewares.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/middlewares.py) arquivo gerado automaticamente pelo scrapy.<br />
+[pipelines.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/pipelines.py) arquivo gerado automaticamente pelo scrapy.<br />
+[settings.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/settings.py) contém as configurações customizadas do projeto.<br />
 
 ### Instalação
 para poder [executar](#Execução-linha-de-comando) o bot, é necessário que seja instalado os requisitos(além do python), eles podem ser encontrados no arquivo [requirements.txt](https://github.com/YuriBoli/scraphones/blob/main/requirements.txt).
