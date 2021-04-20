@@ -1,7 +1,7 @@
 # scraphones
 Aplicação de linha de comando que encontra e extrai o logo, todos os números de telefones nos sites inputados
 
-## indice
+## índice
 1. [Requisitos](#Requisitos)
 2. [Pastas](#Pastas)
 3. [Instalacao](#Instalação)
@@ -36,7 +36,7 @@ Windows:
 
 `python -m pip install -r requirements.txt `
 
-Também há a opção de ser criado uma image docker, utilizando o arquivo [dockerfile](https://github.com/YuriBoli/scraphones/blob/main/dockerfile), para criar a imagem, navegue para dentro da pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot) e execute o comando:
+Também há a opção de ser criado uma imagem docker, utilizando o arquivo [dockerfile](https://github.com/YuriBoli/scraphones/blob/main/dockerfile), para criar a imagem, navegue para dentro da pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot) e execute o comando:
 
 `docker build -t phonebot .`
 
@@ -48,7 +48,7 @@ Para executar o bot, basta navegar até a pasta [phonebot](https://github.com/Yu
 Após a execução irão aparecer dois novos arquivos dentro da pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot), os arquivos **phonenumbers.json** e  **log**, o arquivo **phonenumbers.json**  irá conter o output das informações coletadas nos sites, e o arquivo **log** irá conter o log da aplicação contendo as requisições  feitas e os erros recebidos e gerados.
 
 ### Execução usando imagem docker
-Para executar o bot utilizando uma imagem docker você vai precisar ter contruido a [imagem](#Instalação) e vai precisar também do arquivo contendo os sites separados por quebra de linha.
+Para executar o bot utilizando uma imagem docker você vai precisar ter construído a [imagem](#Instalação) e vai precisar também do arquivo contendo os sites separados por quebra de linha.
 Para executar o bot, contando que você tenha permissão, basta rodar o seguinte comando:
 
 `cat websites.txt | docker run -i --name phone_container phonebot`
