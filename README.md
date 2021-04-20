@@ -4,7 +4,7 @@ Aplicação de linha de comando que encontra e extrai o logo, todos os números 
 ## índice
 1. [Requisitos](#Requisitos)
 2. [Pastas](#Pastas)
-3. [Instalacao](#Instalação)
+3. [Instalação](#Instalação)
 4. [Execução linha de comando](#Execução-linha-de-comando)
 5. [Execução usando imagem docker](#Execução-usando-imagem-docker)
 6. [Observações](#Observações)
