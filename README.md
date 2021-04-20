@@ -16,17 +16,17 @@ Aplicação de linha de comando que encontra e extrai o logo, todos os números 
 - [phonenumbers](https://pypi.org/project/phonenumbers/) = 8.12.21
 
 ### Pastas
-A pasta `phonebot`contem o projeto scrapy .
-* ##### Spiders
-**utils**  contém os módulos logo_filter.py, phone_filter.py e phone_filter.py que são utilizados no para encontrar logo, telefone e verificar os telefones válidos.
-**phonenumber.py** contém o spider que raspa os sites em busca do logo e telefone.
-* **items.py** contém o item modelo de saída.
-* **middlewares.py** arquivo gerado automaticamente pelo scrapy.
-* **pipelines.py** arquivo gerado automaticamente pelo scrapy.
-* **settings.py** contém as configurações customizadas do projeto.
+A pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot) contem o projeto scrapy .
+* ##### [Spiders](https://github.com/YuriBoli/scraphones/tree/main/phonebot/spiders)
+[utils](https://github.com/YuriBoli/scraphones/tree/main/phonebot/spiders/utils) contém os módulos [logo_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/logo_filter.py), [phone_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_filter.py) e [phone_validator.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_validator.py) que são utilizados no para encontrar logo, telefone e verificar os telefones válidos.
+[phonenumber.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/phonenumber.py) contém o spider que raspa os sites em busca do logo e telefone.
+* [items.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/items.py) contém o item modelo de saída.
+* [middlewares.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/middlewares.py) arquivo gerado automaticamente pelo scrapy.
+* [pipelines.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/pipelines.py) arquivo gerado automaticamente pelo scrapy.
+* [settings.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/settings.py) contém as configurações customizadas do projeto.
 
 ### Instalação
-para poder [executar](#Execução) o bot, é necessário que seja instalado os requisitos(além do python), eles podem ser encontrados no arquivo `requirements.txt`.
+para poder [executar](#Execução-linha-de-comando) o bot, é necessário que seja instalado os requisitos(além do python), eles podem ser encontrados no arquivo [requirements.txt](https://github.com/YuriBoli/scraphones/blob/main/requirements.txt).
 Para instalar todos os requisitos, execute o comando abaixo:
 Linux:
 
@@ -36,16 +36,16 @@ Windows:
 
 `python -m pip install -r requirements.txt `
 
-Também há a opção de ser criado uma image docker, utilizando o arquivo `dockerfile`, para criar a imagem, navegue para dentro da pasta `phonebot` e execute o comando:
+Também há a opção de ser criado uma image docker, utilizando o arquivo [dockerfile](https://github.com/YuriBoli/scraphones/blob/main/dockerfile), para criar a imagem, navegue para dentro da pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot) e execute o comando:
 
 `docker build -t phonebot .`
 
 ### Execução linha de comando
-Para executar o bot, basta navegar até a pasta `phonebot`, colar o arquivo contendo os sites, deve ser usado um arquivo contendo os sites que serão raspados, os sites devem ser separados por quebra de linha(um site por linha). Depois de adicionado o arquivo, rode o comando abaixo, onde websites.txt pode ser substituido pelo seu arquivo contendo os sites:
+Para executar o bot, basta navegar até a pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot), colar o arquivo contendo os sites, deve ser usado um arquivo contendo os sites que serão raspados, os sites devem ser separados por quebra de linha(um site por linha). Depois de adicionado o arquivo, rode o comando abaixo, onde websites.txt pode ser substituido pelo seu arquivo contendo os sites:
 
 `cat websites.txt | scrapy crawl phonenumber`
 
-Após a execução irão aparecer dois novos arquivos dentro da pasta `phonebot`, os arquivos **phonenumbers.json** e  **log**, o arquivo **phonenumbers.json**  irá conter o output das informações coletadas nos sites, e o arquivo **log** irá conter o log da aplicação contendo as requisições  feitas e os erros recebidos e gerados.
+Após a execução irão aparecer dois novos arquivos dentro da pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot), os arquivos **phonenumbers.json** e  **log**, o arquivo **phonenumbers.json**  irá conter o output das informações coletadas nos sites, e o arquivo **log** irá conter o log da aplicação contendo as requisições  feitas e os erros recebidos e gerados.
 
 ### Execução usando imagem docker
 Para executar o bot utilizando uma imagem docker você vai precisar ter contruido a [imagem](#Instalação) e vai precisar também do arquivo contendo os sites separados por quebra de linha.
