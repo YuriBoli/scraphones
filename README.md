@@ -17,7 +17,7 @@ Aplicação de linha de comando que encontra e extrai o logo, todos os números 
 ### Pastas
 A pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot) contem o projeto scrapy .
 ##### *[Spiders](https://github.com/YuriBoli/scraphones/tree/main/phonebot/spiders)*
-* [utils](https://github.com/YuriBoli/scraphones/tree/main/phonebot/spiders/utils) contém os módulos [logo_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/logo_filter.py), [phone_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_filter.py) e [phone_validator.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_validator.py) que são utilizados no para encontrar logo, telefone e verificar os telefones válidos.
+* [utils](https://github.com/YuriBoli/scraphones/tree/main/phonebot/spiders/utils) contém os módulos [logo_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/logo_filter.py), [phone_filter.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_filter.py) e [phone_validator.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/utils/phone_validator.py) que são utilizados para encontrar logo, telefone e verificar os telefones válidos.
 * [phonenumber.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/spiders/phonenumber.py) contém o spider que raspa os sites em busca do logo e telefone.
 
 [items.py](https://github.com/YuriBoli/scraphones/blob/main/phonebot/items.py) contém o item modelo de saída.<br />
