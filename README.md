@@ -5,7 +5,7 @@ Aplicação de linha de comando que encontra e extrai o logo, todos os números 
 ## indice
 1. [Requisitos](#Requisitos)
 2. [Pastas](#Pastas)
-3. [Instalacao](#Instalacao)
+3. [Instalacao](#Instalação)
 4. [Execução linha de comando](#Execução-linha-de-comando)
 5. [Execução usando imagem docker](#Execução-usando-imagem-docker)
 6. [Observações](#Observações)
@@ -25,7 +25,7 @@ A pasta `phonebot`contem o projeto scrapy .
 * **pipelines.py** arquivo gerado automaticamente pelo scrapy.
 * **settings.py** contém as configurações customizadas do projeto.
 
-### Instalacao
+### Instalação
 para poder [executar](#Execução) o bot, é necessário que seja instalado os requisitos(além do python), eles podem ser encontrados no arquivo `requirements.txt`.
 Para instalar todos os requisitos, execute o comando abaixo:
 Linux:
