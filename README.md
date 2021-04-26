@@ -41,11 +41,11 @@ Também há a opção de ser criado uma imagem docker, utilizando o arquivo [doc
 `docker build -t phonebot .`
 
 ### Execução linha de comando
-Para executar o bot, basta navegar até a pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot), colar o arquivo contendo os sites, deve ser usado um arquivo contendo os sites que serão raspados, os sites devem ser separados por quebra de linha(um site por linha). Depois de adicionado o arquivo, rode o comando abaixo, onde websites.txt pode ser substituido pelo seu arquivo contendo os sites:
+Para executar o bot, basta navegar até a pasta do repositório [scraphones](https://github.com/YuriBoli/scraphones/tree/main/), colar o arquivo contendo os sites, deve ser usado um arquivo contendo os sites que serão raspados, os sites devem ser separados por quebra de linha(um site por linha). Depois de adicionado o arquivo, rode o comando abaixo, onde websites.txt pode ser substituido pelo seu arquivo contendo os sites:
 
 `cat websites.txt | scrapy crawl phonenumber`
 
-Após a execução irão aparecer dois novos arquivos dentro da pasta [phonebot](https://github.com/YuriBoli/scraphones/tree/main/phonebot), os arquivos **phonenumbers.json** e  **log**, o arquivo **phonenumbers.json**  irá conter o output das informações coletadas nos sites, e o arquivo **log** irá conter o log da aplicação contendo as requisições  feitas e os erros recebidos e gerados.
+Após a execução irão aparecer dois novos arquivos dentro da pasta do repositório [scraphones](https://github.com/YuriBoli/scraphones/tree/main/), os arquivos **phonenumbers.json** e  **log**, o arquivo **phonenumbers.json**  irá conter o output das informações coletadas nos sites, e o arquivo **log** irá conter o log da aplicação contendo as requisições  feitas e os erros recebidos e gerados.
 
 ### Execução usando imagem docker
 Para executar o bot utilizando uma imagem docker você vai precisar ter construído a [imagem](#Instalação) e vai precisar também do arquivo contendo os sites separados por quebra de linha.
